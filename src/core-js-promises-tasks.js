@@ -170,7 +170,6 @@ function queuPromises(promises) {
     if (i >= promises.length) {
       return Promise.resolve(result);
     }
-
     return promises[i]
       .then((value) => {
         result += value;
